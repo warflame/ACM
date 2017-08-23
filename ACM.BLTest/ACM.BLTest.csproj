@@ -58,6 +58,10 @@
       <Project>{28d37340-7073-4094-a445-4d11ef9d0b79}</Project>
       <Name>ACM.BL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ACM.Common\ACM.Common.csproj">
+      <Project>{2fb3f14e-b0e8-4ef3-b63e-4b15897e8a02}</Project>
+      <Name>ACM.Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

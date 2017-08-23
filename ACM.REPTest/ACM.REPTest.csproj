@@ -54,6 +54,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ACM.Common\ACM.Common.csproj">
+      <Project>{2fb3f14e-b0e8-4ef3-b63e-4b15897e8a02}</Project>
+      <Name>ACM.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ACM.DM\ACM.DM.csproj">
       <Project>{0deceefd-0628-47e8-8f71-af01afc5ea4d}</Project>
       <Name>ACM.DM</Name>

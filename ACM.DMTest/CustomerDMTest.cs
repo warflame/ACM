@@ -11,7 +11,7 @@ namespace ACM.DMTest
         public void FullNameTest()
         {
             Customer customer = new Customer();
-            customer.FirstName = "Tharindu1Test";
+            customer.FirstName = "Tharindu";
             customer.LastName = "Dassanayake";
 
             string expected = "Tharindu Dassanayake";
