@@ -20,6 +20,19 @@ namespace ACM.BLTest
 
             Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod]
+        public void MapperTest()
+        {
+            var customerBL = new CustomerBL();
+            var passString = "Tharindu Dassanayake";
+
+            string expected = "TharinduDassanayake";
+
+            bool actual = customerBL.ValidateString(passString);
+
+            Assert.IsTrue(actual);
+        }
         
     }
 }

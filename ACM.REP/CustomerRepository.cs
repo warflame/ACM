@@ -1,4 +1,5 @@
 ﻿using ACM.DM;
+using ACM.DM.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,13 +12,14 @@ namespace ACM.REP
     {
         public Customer retriveData(int customerId){
 
-            Customer customer = new Customer(customerId);
-
-            customer.FirstName = "Tharindu";
-            customer.LastName = "Dassanayake";
-            customer.EmailAddress = "Tharindud@masholdings.com";
-
-            return customer;
+            //Customer customer = new Customer(customerId);
+            //customer.FirstName = "Tharindu";
+            //customer.LastName = "Dassanayake";
+            //customer.EmailAddress = "Tharindud@masholdings.com";
+            using (var ctx = new ACMEntities())
+            {
+                return ctx.Customers.Where(x=>x.Id==customerId).FirstOrDefault();
+            }
 
         }
         public Customer saveData()

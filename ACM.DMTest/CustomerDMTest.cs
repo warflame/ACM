@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using ACM.DM;
+using ACM.DM.Entities;
 
 namespace ACM.DMTest
 {

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ACM.DM
+namespace ACM.DM.Entities
 {
-    public class Customer
+    public partial class Customer
     {
         public Customer()
         {
@@ -18,16 +18,13 @@ namespace ACM.DM
             this.CustomerId = customerId;
         }
 
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public string EmailAddress { get; set; }
         public int CustomerId { get; private set; }
 
         public string FullName {
 
             get {
 
-                string fullName = FirstName;
+                string fullName = LastName;
                 if (!string.IsNullOrEmpty(fullName))
                 {
                     if (!string.IsNullOrEmpty(LastName))
@@ -36,7 +33,7 @@ namespace ACM.DM
                     }
                     else
                     {
-                        fullName += LastName;
+                        fullName +=LastName;
                     }
                 }
                 else

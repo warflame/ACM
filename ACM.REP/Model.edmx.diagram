@@ -4,7 +4,10 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="80cc545aac6d4e61bb5db11f85188688" Name="Diagram1" />
+      <Diagram DiagramId="4288c2288ccf4451a1454e67899e2516" Name="Diagram1" >
+        <EntityTypeShape EntityType="ACMModel.Customer" Width="1.5" PointX="3" PointY="0.5" />
+        <EntityTypeShape EntityType="ACMModel.Product" Width="1.5" PointX="0.75" PointY="0.5" />
+      </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
 </edmx:Edmx>

@@ -47,22 +47,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CustomerDA.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CustomerDA.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="CustomerDA.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CustomerDA.tt</DependentUpon>
-    </Compile>
-    <Compile Include="CustomerDA.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CustomerDA.edmx</DependentUpon>
-    </Compile>
     <Compile Include="CustomerRepository.cs" />
+    <Compile Include="Model.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -72,32 +67,25 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EntityDeploy Include="CustomerDA.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>CustomerDA.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="App.Config" />
-    <None Include="CustomerDA.edmx.diagram">
-      <DependentUpon>CustomerDA.edmx</DependentUpon>
+    <EntityDeploy Include="Model.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Model.edmx.diagram">
+      <DependentUpon>Model.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="CustomerDA.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>CustomerDA.edmx</DependentUpon>
-      <LastGenOutput>CustomerDA.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="CustomerDA.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>CustomerDA.edmx</DependentUpon>
-      <LastGenOutput>CustomerDA.cs</LastGenOutput>
-    </Content>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <Content Include="Model.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model.edmx</DependentUpon>
+      <LastGenOutput>Model.Context.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

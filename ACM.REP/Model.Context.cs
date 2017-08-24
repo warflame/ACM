@@ -12,6 +12,7 @@ namespace ACM.REP
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
+    using ACM.DM.Entities;
     
     public partial class ACMEntities : DbContext
     {
@@ -25,5 +26,7 @@ namespace ACM.REP
             throw new UnintentionalCodeFirstException();
         }
     
+        public DbSet<Customer> Customers { get; set; }
+        public DbSet<Product> Products { get; set; }
     }
 }

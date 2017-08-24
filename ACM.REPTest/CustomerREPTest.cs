@@ -2,6 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using ACM.REP;
 using ACM.DM;
+using ACM.DM.Entities;
 
 namespace ACM.REPTest
 {
