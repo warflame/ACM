@@ -19,6 +19,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACM.Common", "ACM.Common\AC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACM.DM.DTO", "ACM.DM.DTO\ACM.DM.DTO.csproj", "{3ABC81CF-D6EC-4B19-BD85-4BA31B1AE26C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACM.WEB.API", "ACM.WEB.API\ACM.WEB.API.csproj", "{9154DA60-312D-4F58-B2F8-A957FB900006}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACM.WEB", "ACM.WEB\ACM.WEB.csproj", "{B1D9AAEB-894C-4DA7-88C5-00A2B0BA3F49}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +61,14 @@ Global
 		{3ABC81CF-D6EC-4B19-BD85-4BA31B1AE26C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3ABC81CF-D6EC-4B19-BD85-4BA31B1AE26C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3ABC81CF-D6EC-4B19-BD85-4BA31B1AE26C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9154DA60-312D-4F58-B2F8-A957FB900006}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9154DA60-312D-4F58-B2F8-A957FB900006}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9154DA60-312D-4F58-B2F8-A957FB900006}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9154DA60-312D-4F58-B2F8-A957FB900006}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1D9AAEB-894C-4DA7-88C5-00A2B0BA3F49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1D9AAEB-894C-4DA7-88C5-00A2B0BA3F49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1D9AAEB-894C-4DA7-88C5-00A2B0BA3F49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1D9AAEB-894C-4DA7-88C5-00A2B0BA3F49}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
